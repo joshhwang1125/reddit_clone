@@ -1,0 +1,8 @@
+<header>
+  <% if logged_in? %>
+    <%= current_user.username %>
+    <%= button_to "Logout", session_url, method: :delete %>
+  <% else %>
+    <%= button_to "Login", new_session_url, method: :get %>
+  <% end %>
+</header>

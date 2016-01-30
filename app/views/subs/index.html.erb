@@ -1,0 +1,7 @@
+
+<% Sub.all.each do |subreddit| %>
+  <%= link_to "#{subreddit.title}", sub_url(subreddit) %>
+  <br>
+<% end %>
+<br>
+<%= link_to "Create New Subreddit", new_sub_url %>
